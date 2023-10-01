@@ -9,19 +9,32 @@
 /* Begin PBXBuildFile section */
 		006E19112AC7974D0076F4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19102AC7974D0076F4DB /* AppDelegate.swift */; };
 		006E19132AC7974D0076F4DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19122AC7974D0076F4DB /* SceneDelegate.swift */; };
-		006E19152AC7974D0076F4DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19142AC7974D0076F4DB /* ViewController.swift */; };
 		006E191A2AC797500076F4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006E19192AC797500076F4DB /* Assets.xcassets */; };
 		006E191D2AC797500076F4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E191B2AC797500076F4DB /* LaunchScreen.storyboard */; };
+		006E19262AC7CCCD0076F4DB /* RegionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19252AC7CCCD0076F4DB /* RegionTableViewController.swift */; };
+		006E19282AC7CCE30076F4DB /* RegionTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19272AC7CCE30076F4DB /* RegionTableViewModel.swift */; };
+		006E192A2AC7CCF10076F4DB /* RegionTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19292AC7CCF10076F4DB /* RegionTableModel.swift */; };
+		006E192E2AC7D2C30076F4DB /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E192D2AC7D2C30076F4DB /* RegionService.swift */; };
+		006E19302AC7D60E0076F4DB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E192F2AC7D60E0076F4DB /* Observable.swift */; };
+		006E19322AC7E4760076F4DB /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19312AC7E4760076F4DB /* RegionTableViewCell.swift */; };
+		006E19352AC7EA990076F4DB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 006E19342AC7EA990076F4DB /* Kingfisher */; };
+		006E19382AC7FC0F0076F4DB /* RegionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E19372AC7FC0F0076F4DB /* RegionDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		006E190D2AC7974D0076F4DB /* WBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E19102AC7974D0076F4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006E19122AC7974D0076F4DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		006E19142AC7974D0076F4DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		006E19192AC797500076F4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		006E191C2AC797500076F4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006E191E2AC797500076F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006E19252AC7CCCD0076F4DB /* RegionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewController.swift; sourceTree = "<group>"; };
+		006E19272AC7CCE30076F4DB /* RegionTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewModel.swift; sourceTree = "<group>"; };
+		006E19292AC7CCF10076F4DB /* RegionTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableModel.swift; sourceTree = "<group>"; };
+		006E192D2AC7D2C30076F4DB /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
+		006E192F2AC7D60E0076F4DB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		006E19312AC7E4760076F4DB /* RegionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
+		006E19372AC7FC0F0076F4DB /* RegionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006E19352AC7EA990076F4DB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +68,36 @@
 		006E190F2AC7974D0076F4DB /* WBTest */ = {
 			isa = PBXGroup;
 			children = (
+				006E19362AC7FBE40076F4DB /* RegionDetail */,
+				006E192D2AC7D2C30076F4DB /* RegionService.swift */,
+				006E192F2AC7D60E0076F4DB /* Observable.swift */,
+				006E19242AC7CC790076F4DB /* RegionTableView */,
 				006E19102AC7974D0076F4DB /* AppDelegate.swift */,
 				006E19122AC7974D0076F4DB /* SceneDelegate.swift */,
-				006E19142AC7974D0076F4DB /* ViewController.swift */,
 				006E19192AC797500076F4DB /* Assets.xcassets */,
 				006E191B2AC797500076F4DB /* LaunchScreen.storyboard */,
 				006E191E2AC797500076F4DB /* Info.plist */,
 			);
 			path = WBTest;
+			sourceTree = "<group>";
+		};
+		006E19242AC7CC790076F4DB /* RegionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				006E19252AC7CCCD0076F4DB /* RegionTableViewController.swift */,
+				006E19272AC7CCE30076F4DB /* RegionTableViewModel.swift */,
+				006E19292AC7CCF10076F4DB /* RegionTableModel.swift */,
+				006E19312AC7E4760076F4DB /* RegionTableViewCell.swift */,
+			);
+			path = RegionTableView;
+			sourceTree = "<group>";
+		};
+		006E19362AC7FBE40076F4DB /* RegionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				006E19372AC7FC0F0076F4DB /* RegionDetailViewController.swift */,
+			);
+			path = RegionDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +116,9 @@
 			dependencies = (
 			);
 			name = WBTest;
+			packageProductDependencies = (
+				006E19342AC7EA990076F4DB /* Kingfisher */,
+			);
 			productName = WBTest;
 			productReference = 006E190D2AC7974D0076F4DB /* WBTest.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 006E19042AC7974D0076F4DB;
+			packageReferences = (
+				006E19332AC7EA990076F4DB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 006E190E2AC7974D0076F4DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,8 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006E19152AC7974D0076F4DB /* ViewController.swift in Sources */,
+				006E19262AC7CCCD0076F4DB /* RegionTableViewController.swift in Sources */,
+				006E192A2AC7CCF10076F4DB /* RegionTableModel.swift in Sources */,
+				006E19322AC7E4760076F4DB /* RegionTableViewCell.swift in Sources */,
+				006E19382AC7FC0F0076F4DB /* RegionDetailViewController.swift in Sources */,
+				006E192E2AC7D2C30076F4DB /* RegionService.swift in Sources */,
+				006E19302AC7D60E0076F4DB /* Observable.swift in Sources */,
 				006E19112AC7974D0076F4DB /* AppDelegate.swift in Sources */,
+				006E19282AC7CCE30076F4DB /* RegionTableViewModel.swift in Sources */,
 				006E19132AC7974D0076F4DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		006E19332AC7EA990076F4DB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		006E19342AC7EA990076F4DB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 006E19332AC7EA990076F4DB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 006E19052AC7974D0076F4DB /* Project object */;
 }
